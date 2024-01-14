@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQUARE CALCULATOR</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header id="header">
+        <p class="header-star" id="first-header-name">SQUARE</p>
+        <p class="header-star" id="last-header-name">CALCULATOR</p>
+    </header>
+
+    <p class="welcome-words" id="welcome-words-one">Welcome to Square Calculator</p>
+    <p class="welcome-words" id="welcome-words-two">Visitors, you can calculate the square area and perimeter on this website</p>
+
+    <nav id="first-navigation-tag">
+        <a href="#square-area-legend" class="navigation-bar" id="area-navigation">Square Area</a>
+        <a href="#square-perimeter-legend" class="navigation-bar" id="perimeter-navigation">Square Perimeter</a>
+    </nav>
+
+    <fieldset id="square-area-fieldset">
+        <legend id="square-area-legend">Square Area</legend>
+
+        <article id="square-area-article">
+            <img src="/assets/square image 1.jpg" alt="square-image" id="square-area-image">
+            <p>Square Area Formula :<br>A = S x S</p>
+            <p>Note :<br>The letter 'A' represents the square area.<br>The letter 'S' represents the square sides [side AB, side BC. side CD, side DA].</p>
+        </article>
+
+        <fieldset id="square-area-subfieldset">
+            <legend id="square-area-sublegend">Square Area Calculator</legend>
+            <label for="Side" class="square-area-side" id="area-side-label">Side</label>
+            <input type="number" class="square-area-side" id="area-side-input">
+            <button class="area-buttons" id="area-Count">Count</button>
+            <button class="area-buttons" id="area-Reset">Reset</button>
+        </fieldset>
+    </fieldset>
+    
+    <fieldset id="square-perimeter-fieldset">
+        <legend id="square-perimeter-legend">Square Perimeter</legend>
+
+        <article id="square-perimeter-article">
+            <img src="/assets/square image 1.jpg" alt="square-image" id="square-perimeter-image">
+            <p>Square Perimeter Formula :<br>P = S x 4</p>
+            <p>Note :<br>The letter 'P' represents the square perimeter.<br>The letter 'S' represents the square sides [side AB, side BC. side CD, side DA].</p>
+        </article>
+
+        <fieldset id="square-perimeter-subfieldset">
+            <legend id="square-perimeter-sublegend">Square Perimeter Calculator</legend>
+            <label for="Side" class="square-perimeter-side" id="perimeter-side-label">Side</label>
+            <input type="number" class="square-perimeter-side" id="perimeter-side-input">
+            <button class="perimeter-buttons" id="perimeter-Count">Count</button>
+            <button class="perimeter-buttons" id="perimeter-Reset">Reset</button>
+        </fieldset>
+    </fieldset>
+
+    <nav id="second-navigation-tag">
+        <a href="#header" id="back-to-top-navigation">Back to top</a>
+    </nav>
+
+
+</body>
+</html>
