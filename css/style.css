@@ -1,5 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/assets/website\ background\ polish\ 2.png);
     background-color: black;
     color: white;
 }
@@ -86,6 +87,10 @@ header {
     font-weight: bold;
 }
 
+#square-area-image {
+    margin-top: 40px;
+}
+
 #square-area-subfieldset {
     border-radius: 10px;
     border-color: lightgreen;
@@ -155,6 +160,10 @@ header {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+}
+
+#square-perimeter-image {
+    margin-top: 40px;
 }
 
 #square-perimeter-subfieldset {
