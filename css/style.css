@@ -1,69 +1,123 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(/assets/website\ background\ polish\ 2.png);
+    background-image: url(/assets/website\ background\ polish\ 4.png);
     background-color: black;
     color: white;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+nav {
     background-color: darkgreen;
-    border-radius: 10px;
-    font-size: 45px;
+    padding: 9px;
+    border-radius: 12px;
+    position: sticky;
+    z-index: 3;
+    display: flex;
+    top: 0;
+}
+
+.web-navigation {
+    width: 1300px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    gap: 460px;
+}
+
+.logo {
+    font-size: 50px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px 
+}
+
+.menu {
+    margin-top: 5px;
+    font-size: 28px;
+    display: flex;
+    gap: 25px;
+}
+
+#first-header-name {
+    text-decoration: none;
+    color: white;
+}
+
+#last-header-name {
+    text-decoration: none;
+    color: orange;
+}
+
+#home-navigation {
+    text-decoration: none;
+    color: gold;
+    background: rgb(156, 5, 5);
+    padding: 8px;
+    border-radius: 11px;
+}
+
+#home-navigation:active {
+    background-color: rgb(56, 224, 14);
+}
+
+#home-navigation:hover {
+    background-color: rgb(2, 41, 126);
     font-weight: bold;
 }
 
-.welcome-words {
-    text-align: center;
+#square-area-navigation {
+    text-decoration: none;
+    color: gold;
+    background: rgb(156, 5, 5);
+    padding: 8px;
+    border-radius: 11px;
 }
 
-#welcome-words-one {
-    font-size: 25px;
+#square-area-navigation:active {
+    background-color: rgb(56, 224, 14);
 }
 
-#welcome-words-two{
-    font-size: 20px;
+#square-area-navigation:hover {
+    background-color: rgb(2, 41, 126);
+    font-weight: bold;
 }
 
-#first-navigation-tag {
-    font-size: 30px;
+#square-circumference-navigation {
+    text-decoration: none;
+    color: gold;
+    background: rgb(156, 5, 5);
+    padding: 8px;
+    border-radius: 11px;
+}
+
+#square-circumference-navigation:active {
+    background-color: rgb(56, 224, 14);
+}
+
+#square-circumference-navigation:hover {
+    background-color: rgb(2, 41, 126);
+    font-weight: bold;
+}
+
+section {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    gap: 143px;
+    margin-top: 34px;
 }
 
-#area-navigation {
-    text-decoration: none;
-    background-color: rgb(4, 167, 4);
-    padding: 10px 40px;
-    border-radius: 28px;
-    color: white;
+.home-description {
+    font-size: 30px;
 }
 
-#area-navigation:hover {
-    background-color: red;
+h2 {
+    font-size: 55px;
 }
 
-#area-navigation:active {
-    background-color: blue;
+#web-name {
+    color: gold;
 }
 
-#perimeter-navigation {
-    text-decoration: none;
-    background-color: rgb(4, 167, 4);
-    padding: 10px 40px;
-    border-radius: 28px;
-    color: white;
-}
-
-#perimeter-navigation:hover {
-    background-color: red;
-}
-
-#perimeter-navigation:active {
-    background-color: blue;
+#home-image{
+    width: 474px;
 }
 
 #square-area-fieldset {
@@ -141,14 +195,14 @@ header {
     transform: translateY(5px);
 }
 
-#square-perimeter-fieldset {
+#square-circumference-fieldset {
     margin-top: 60px;
     border-radius: 20px;
     border-color: lightgreen;
     border-width: thick;
 }
 
-#square-perimeter-legend {
+#square-circumference-legend {
     font-size: 35px;
     text-align: center;
     background-color: darkgreen;
@@ -156,46 +210,46 @@ header {
     border-radius: 10px;
 }
 
-#square-perimeter-article {
+#square-circumference-article {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
 
-#square-perimeter-image {
+#square-circumference-image {
     margin-top: 40px;
 }
 
-#square-perimeter-subfieldset {
+#square-circumference-subfieldset {
     border-radius: 10px;
     border-color: lightgreen;
     border-width: medium;
 }
 
-#square-perimeter-sublegend {
+#square-circumference-sublegend {
     font-size: 25px;
     background-color: darkolivegreen;
     padding: 10px;
     border-radius: 10px;
 }
 
-.square-perimeter-side {
+.square-circumference-side {
     display: flex;
     flex-direction: column;
 }
 
-#perimeter-side-label {
+#circumference-side-label {
     font-size: 20px;
     font-weight: bold;
 }
 
-#perimeter-side-input {
+#circumference-side-input {
     border-radius: 10px;
     padding: 8px;
     border-color: lawngreen;
 }
 
-.perimeter-buttons {
+.circumference-buttons {
     background-color: rgb(170, 7, 7);
     color: rgb(253, 253, 253);
     padding: 10px 25px;
@@ -205,35 +259,14 @@ header {
     margin-top: 10px;
 }
 
-.perimeter-buttons:hover {
+.circumference-buttons:hover {
     background-color: blue;
     font-size: 18px;
     font-weight: bold;
 }
 
-.perimeter-buttons:active {
+.circumference-buttons:active {
     background-color: green;
     transform: translateY(5px);
 }
 
-#back-to-top-navigation {
-    background-color: green;
-    padding: 10px;
-    border-radius: 20px;
-    display: inline-flex;
-    margin-top: 20px;
-    margin-left: 1330px;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-}
-
-#back-to-top-navigation:hover{
-    background-color: red;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#back-to-top-navigation:active{
-    background-color: blue;
-}
