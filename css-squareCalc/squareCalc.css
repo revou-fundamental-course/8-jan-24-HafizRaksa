@@ -172,27 +172,57 @@ h2 {
     border-radius: 10px;
     padding: 8px;
     border-color: lawngreen;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .area-buttons {
+    margin-top: 10px;
+}
+
+#area-Count {
     background-color: rgb(170, 7, 7);
     color: rgb(253, 253, 253);
     padding: 10px 25px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.area-buttons:hover {
+#area-Reset {
+    background-color: rgb(170, 7, 7);
+    color: rgb(253, 253, 253);
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#area-Count:hover {
     background-color: blue;
     font-size: 18px;
     font-weight: bold;
 }
 
-.area-buttons:active {
+#area-Count:active {
     background-color: green;
     transform: translateY(5px);
+}
+
+#area-Reset:hover {
+    background-color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#area-Reset:active {
+    background-color: green;
+    transform: translateY(5px);
+}
+
+#area-Result {
+    font-weight: bold;
+    font-size: 30px;
 }
 
 #square-circumference-fieldset {
@@ -247,26 +277,55 @@ h2 {
     border-radius: 10px;
     padding: 8px;
     border-color: lawngreen;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .circumference-buttons {
+    margin-top: 10px;
+}
+
+#circumference-Count {
     background-color: rgb(170, 7, 7);
     color: rgb(253, 253, 253);
     padding: 10px 25px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.circumference-buttons:hover {
+#circumference-Reset {
+    background-color: rgb(170, 7, 7);
+    color: rgb(253, 253, 253);
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#circumference-Count:hover {
     background-color: blue;
     font-size: 18px;
     font-weight: bold;
 }
 
-.circumference-buttons:active {
+#circumference-Count:active {
     background-color: green;
     transform: translateY(5px);
 }
 
+#circumference-Reset:hover {
+    background-color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#circumference-Reset:active {
+    background-color: green;
+    transform: translateY(5px);
+}
+
+#circumference-Result {
+    font-weight: bold;
+    font-size: 30px;
+}

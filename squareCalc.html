@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SQUARE CALCULATOR</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css-squareCalc/squareCalc.css">
+    <script src="/js-squareCalc/squareCalc.js"></script>
     
 </head>
 <body>
@@ -50,10 +51,15 @@
 
         <fieldset id="square-area-subfieldset">
             <legend id="square-area-sublegend">Square Area Calculator</legend>
-            <label for="Side" class="square-area-side" id="area-side-label">Side</label>
-            <input type="number" class="square-area-side" id="area-side-input">
-            <button class="area-buttons" id="area-Count">Count</button>
-            <button class="area-buttons" id="area-Reset">Reset</button>
+            <div class="square-area-side">
+                <label for="Side" id="area-side-label">Side</label>
+                <input type="number" id="area-side-input">
+            </div>
+            <div class="area-buttons">
+                <button id="area-Count">Count</button>
+                <button id="area-Reset">Reset</button>
+            </div>
+            <div id="area-Result"></div>
         </fieldset>
     </fieldset>
     <br>
@@ -76,13 +82,50 @@
 
         <fieldset id="square-circumference-subfieldset">
             <legend id="square-circumference-sublegend">Square Circumference Calculator</legend>
-            <label for="Side" class="square-circumference-side" id="circumference-side-label">Side</label>
-            <input type="number" class="square-circumference-side" id="circumference-side-input">
-            <button class="circumference-buttons" id="circumference-Count">Count</button>
-            <button class="circumference-buttons" id="circumference-Reset">Reset</button>
+            <div class="square-circumference-side">
+                <label for="Side" id="circumference-side-label">Side</label>
+                <input type="number" id="circumference-side-input">
+            </div>
+            <div class="circumference-buttons">
+                <button id="circumference-Count">Count</button>
+                <button id="circumference-Reset">Reset</button>
+            </div>
+            <div id="circumference-Result"></div>
         </fieldset>
     </fieldset>
+    <script>
+        const areaSide = document.getElementById('area-side-input')
+        const areaCount = document.getElementById('area-Count')
+        const areaResult = document.getElementById('area-Result')
+        const areaReset = document.getElementById('area-Reset')
 
+        const circumferenceSide = document.getElementById('circumference-side-input')
+        const circumferenceCount = document.getElementById('circumference-Count')
+        const circumferenceResult = document.getElementById('circumference-Result')
+        const circumferenceReset = document.getElementById('circumference-Reset')
+
+        areaCount.addEventListener('click', function(){
+            let sideOne = areaSide.value
+            let areaSquare = sideOne*sideOne
+            areaResult.innerHTML = `Area = ` +sideOne*sideOne; 
+        })
+
+        areaReset.addEventListener('click', function(){
+            areaSide.value = null
+            areaResult.innerHTML = null
+        })
+
+        circumferenceCount.addEventListener('click', function(){
+            let sideTwo = circumferenceSide.value
+            let circumferenceSquare = sideTwo * 4
+            circumferenceResult.innerHTML = `Circumference = ` +sideTwo * 4;
+        })
+
+        circumferenceReset.addEventListener('click', function(){
+            circumferenceSide.value = null
+            circumferenceResult.innerHTML = null
+        })
+    </script>
 
 </body>
 </html>
